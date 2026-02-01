@@ -1,0 +1,43 @@
+Ex1.
+IDENTIFIER: [a-z][a-z0-9]*
+
+
+Ex2.
+//
+REAL: [0-9]+(('.'[0-9]+('e'[+-]?[0-9]+)*)|('e'[+-]?[0-9]+)*);
+
+//
+REAL: DIGIT+ ('.'DIGIT+| '.'DIGIT+ DECIMALSIDE| DECIMALSIDE);
+fragment DIGIT: [0-9];
+fragment DECIMALSIDE: ('e'[+-]? DIGIT+);
+
+//
+REAL: DIGIT ('.'DIGIT DECIMALSIDE| DECIMALSIDE);
+fragment DIGIT: [0-9]+;
+fragment DECIMALSIDE: ('e'[+-]? DIGIT)?;
+
+
+Ex3.
+STRING: ['] (~[']|['][']+)* ['] ;
+
+
+Ex4. 
+INT: '0'|[1-9] [0-9]* ( '_' [0-9]+ )* {
+    self.text = self.text.replace('_', '')
+};
+
+
+Ex5.
+IP: OCTET '.' OCTET '.' OCTET '.' OCTET ;
+fragment DIGIT: [0-9];
+fragment OCTET: [1-9] DIGIT DIGIT| [1-9] DIGIT | [0-9];
+
+
+Ex6. 
+SHEXA: [1-9] [a-fA-F0-9]* [02468aceACE];
+
+
+Ex7.
+BKNETID: NAME '.' NAME USER+ ('.' USER+)*;
+fragment NAME: [a-z]+;
+fragment USER: [a-z0-9_];

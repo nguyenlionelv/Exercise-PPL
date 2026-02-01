@@ -1,0 +1,32 @@
+program: (vardecl | funcdecl)+ EOF ;
+
+vardecl: TYPE varname SEMI;
+varname: ID CM varname | ID;
+
+funcdecl: TYPE func body;
+func: ID LB param RB;
+param: parameter |;
+parameter: TYPE var SEMI parameter | TYPE var;
+var: ID CM var | ID;
+
+
+body: LP stmtlist RP;
+stmtlist: stmt stmtlist |;
+
+stmt: vardecl | assignstmt | callstmt | returnstmt;
+
+assignstmt: ID EQUAL expr SEMI;
+callstmt: ID LB callparam RB SEMI;
+callparam: expr CM callparam | expr;
+returnstmt: 'return' expr SEMI;
+
+expr: 'expr';
+TYPE: 'int' | 'float';
+ID: [a-zA-Z_][a-zA-Z0-9_]*;
+SEMI: ';';
+CM: ',';
+LB: '(';
+RB: ')';
+LP: '{';  
+RP: '}';
+EQUAL: '=';

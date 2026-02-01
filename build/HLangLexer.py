@@ -1,0 +1,146 @@
+# Generated from HLang.g4 by ANTLR 4.13.2
+from antlr4 import *
+from io import StringIO
+import sys
+if sys.version_info[1] > 5:
+    from typing import TextIO
+else:
+    from typing.io import TextIO
+
+
+from lexererr import *
+
+
+def serializedATN():
+    return [
+        4,0,22,116,6,-1,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,
+        2,6,7,6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,2,
+        13,7,13,2,14,7,14,2,15,7,15,2,16,7,16,2,17,7,17,2,18,7,18,2,19,7,
+        19,2,20,7,20,2,21,7,21,1,0,1,0,1,1,1,1,1,2,1,2,1,3,1,3,1,4,1,4,1,
+        4,1,4,1,5,1,5,1,5,1,5,1,5,1,5,1,6,1,6,1,7,1,7,1,8,1,8,1,9,1,9,1,
+        10,1,10,1,11,1,11,1,11,1,11,1,12,4,12,79,8,12,11,12,12,12,80,1,13,
+        1,13,1,14,1,14,1,15,1,15,1,16,1,16,1,16,1,16,1,16,1,16,1,16,1,17,
+        1,17,5,17,98,8,17,10,17,12,17,101,9,17,1,18,4,18,104,8,18,11,18,
+        12,18,105,1,18,1,18,1,19,1,19,1,19,1,20,1,20,1,21,1,21,0,0,22,1,
+        1,3,2,5,3,7,4,9,5,11,6,13,7,15,8,17,9,19,10,21,11,23,12,25,13,27,
+        14,29,15,31,16,33,17,35,18,37,19,39,20,41,21,43,22,1,0,4,1,0,48,
+        57,3,0,65,90,95,95,97,122,4,0,48,57,65,90,95,95,97,122,3,0,9,10,
+        13,13,32,32,118,0,1,1,0,0,0,0,3,1,0,0,0,0,5,1,0,0,0,0,7,1,0,0,0,
+        0,9,1,0,0,0,0,11,1,0,0,0,0,13,1,0,0,0,0,15,1,0,0,0,0,17,1,0,0,0,
+        0,19,1,0,0,0,0,21,1,0,0,0,0,23,1,0,0,0,0,25,1,0,0,0,0,27,1,0,0,0,
+        0,29,1,0,0,0,0,31,1,0,0,0,0,33,1,0,0,0,0,35,1,0,0,0,0,37,1,0,0,0,
+        0,39,1,0,0,0,0,41,1,0,0,0,0,43,1,0,0,0,1,45,1,0,0,0,3,47,1,0,0,0,
+        5,49,1,0,0,0,7,51,1,0,0,0,9,53,1,0,0,0,11,57,1,0,0,0,13,63,1,0,0,
+        0,15,65,1,0,0,0,17,67,1,0,0,0,19,69,1,0,0,0,21,71,1,0,0,0,23,73,
+        1,0,0,0,25,78,1,0,0,0,27,82,1,0,0,0,29,84,1,0,0,0,31,86,1,0,0,0,
+        33,88,1,0,0,0,35,95,1,0,0,0,37,103,1,0,0,0,39,109,1,0,0,0,41,112,
+        1,0,0,0,43,114,1,0,0,0,45,46,5,40,0,0,46,2,1,0,0,0,47,48,5,41,0,
+        0,48,4,1,0,0,0,49,50,5,123,0,0,50,6,1,0,0,0,51,52,5,125,0,0,52,8,
+        1,0,0,0,53,54,5,105,0,0,54,55,5,110,0,0,55,56,5,116,0,0,56,10,1,
+        0,0,0,57,58,5,102,0,0,58,59,5,108,0,0,59,60,5,111,0,0,60,61,5,97,
+        0,0,61,62,5,116,0,0,62,12,1,0,0,0,63,64,5,43,0,0,64,14,1,0,0,0,65,
+        66,5,45,0,0,66,16,1,0,0,0,67,68,5,42,0,0,68,18,1,0,0,0,69,70,5,47,
+        0,0,70,20,1,0,0,0,71,72,3,25,12,0,72,22,1,0,0,0,73,74,3,25,12,0,
+        74,75,5,46,0,0,75,76,3,25,12,0,76,24,1,0,0,0,77,79,7,0,0,0,78,77,
+        1,0,0,0,79,80,1,0,0,0,80,78,1,0,0,0,80,81,1,0,0,0,81,26,1,0,0,0,
+        82,83,5,44,0,0,83,28,1,0,0,0,84,85,5,59,0,0,85,30,1,0,0,0,86,87,
+        5,61,0,0,87,32,1,0,0,0,88,89,5,114,0,0,89,90,5,101,0,0,90,91,5,116,
+        0,0,91,92,5,117,0,0,92,93,5,114,0,0,93,94,5,110,0,0,94,34,1,0,0,
+        0,95,99,7,1,0,0,96,98,7,2,0,0,97,96,1,0,0,0,98,101,1,0,0,0,99,97,
+        1,0,0,0,99,100,1,0,0,0,100,36,1,0,0,0,101,99,1,0,0,0,102,104,7,3,
+        0,0,103,102,1,0,0,0,104,105,1,0,0,0,105,103,1,0,0,0,105,106,1,0,
+        0,0,106,107,1,0,0,0,107,108,6,18,0,0,108,38,1,0,0,0,109,110,9,0,
+        0,0,110,111,6,19,1,0,111,40,1,0,0,0,112,113,9,0,0,0,113,42,1,0,0,
+        0,114,115,9,0,0,0,115,44,1,0,0,0,4,0,80,99,105,2,6,0,0,1,19,0
+    ]
+
+class HLangLexer(Lexer):
+
+    atn = ATNDeserializer().deserialize(serializedATN())
+
+    decisionsToDFA = [ DFA(ds, i) for i, ds in enumerate(atn.decisionToState) ]
+
+    T__0 = 1
+    T__1 = 2
+    T__2 = 3
+    T__3 = 4
+    T__4 = 5
+    T__5 = 6
+    ADD = 7
+    SUB = 8
+    MUL = 9
+    DIV = 10
+    INTLIT = 11
+    FLOATLIT = 12
+    DIGIT = 13
+    CM = 14
+    SEMI = 15
+    EQUAL = 16
+    RETURN = 17
+    ID = 18
+    WS = 19
+    ERROR_CHAR = 20
+    ILLEGAL_ESCAPE = 21
+    UNCLOSE_STRING = 22
+
+    channelNames = [ u"DEFAULT_TOKEN_CHANNEL", u"HIDDEN" ]
+
+    modeNames = [ "DEFAULT_MODE" ]
+
+    literalNames = [ "<INVALID>",
+            "'('", "')'", "'{'", "'}'", "'int'", "'float'", "'+'", "'-'", 
+            "'*'", "'/'", "','", "';'", "'='", "'return'" ]
+
+    symbolicNames = [ "<INVALID>",
+            "ADD", "SUB", "MUL", "DIV", "INTLIT", "FLOATLIT", "DIGIT", "CM", 
+            "SEMI", "EQUAL", "RETURN", "ID", "WS", "ERROR_CHAR", "ILLEGAL_ESCAPE", 
+            "UNCLOSE_STRING" ]
+
+    ruleNames = [ "T__0", "T__1", "T__2", "T__3", "T__4", "T__5", "ADD", 
+                  "SUB", "MUL", "DIV", "INTLIT", "FLOATLIT", "DIGIT", "CM", 
+                  "SEMI", "EQUAL", "RETURN", "ID", "WS", "ERROR_CHAR", "ILLEGAL_ESCAPE", 
+                  "UNCLOSE_STRING" ]
+
+    grammarFileName = "HLang.g4"
+
+    def __init__(self, input=None, output:TextIO = sys.stdout):
+        super().__init__(input, output)
+        self.checkVersion("4.13.2")
+        self._interp = LexerATNSimulator(self, self.atn, self.decisionsToDFA, PredictionContextCache())
+        self._actions = None
+        self._predicates = None
+
+
+    def emit(self):
+        tk = self.type
+        if tk == self.UNCLOSE_STRING:       
+            result = super().emit();
+            raise UncloseString(result.text);
+        elif tk == self.ILLEGAL_ESCAPE:
+            result = super().emit();
+            raise IllegalEscape(result.text);
+        elif tk == self.ERROR_CHAR:
+            result = super().emit();
+            raise ErrorToken(result.text); 
+        else:
+            return super().emit();
+
+
+    def action(self, localctx:RuleContext, ruleIndex:int, actionIndex:int):
+        if self._actions is None:
+            actions = dict()
+            actions[19] = self.ERROR_CHAR_action 
+            self._actions = actions
+        action = self._actions.get(ruleIndex, None)
+        if action is not None:
+            action(localctx, actionIndex)
+        else:
+            raise Exception("No registered action for:" + str(ruleIndex))
+
+
+    def ERROR_CHAR_action(self, localctx:RuleContext , actionIndex:int):
+        if actionIndex == 0:
+            raise ErrorToken(self.text)
+     
+
+
